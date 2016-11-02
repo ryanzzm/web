@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+	<meta charset='UTF-8'>
+	<title>Simple Loader</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+		/* This only works with JavaScript, 
+		   if it's not present, don't show loader */
+		.no-js #loader { 
+			display: none;  
+			}
+		.js #loader { 
+			display: block; 
+			position: absolute; 
+			left: 0; 
+			top: 0; 
+			}
+		#loader{
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url(../../img/loading/loader-64x/Preloader_2.gif) center no-repeat #fff;
+			}
+
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<!--	<script src="../../js/jquery/jquery-3.1.1.min.js"></script> -->
+	<!-- modernizr is use to determine js support here -->
+	<script src="../../js/modernizr/modernizr-3.3.1.js"></script>
+	<script>
+		// Wait for window load and fadeOut loader img
+		$(window).load(function() {
+			$("#loader").fadeOut();
+		});
+		$(window)
+	</script>	
+</head>
+<body>
+	<!-- loader have to close to body tag -->
+	<div id="loader"></div>
+
+	<!-- load web page -->
+	
+
+	<div class="content">
+	<div class="back-to-article"><p><a href="smallenvelop.com/blog/"><< Back to the article !!</a></p></div>
+	<img src="http://smallenvelop.com/wp-content/uploads/2014/08/simple-pre-loader.jpg
+" style="visibility: hidden; width:100%; height: auto;">
+	</div>
+	<style>
+		.content {
+			background: url(http://smallenvelop.com/wp-content/uploads/2014/08/simple-pre-loader.jpg
+) center no-repeat;
+			background-size: 100%;
+			width: 100%;
+		}
+	</style>
+		
+</body>
+
+</html>
